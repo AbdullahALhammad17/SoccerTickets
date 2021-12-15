@@ -12,7 +12,9 @@ import UIKit
 
 class User {
     var email : String?
-    var pass : String?
+    var fullName : String?
+    var phoneNumber : String?
+    var city : String?
 }
 
 
@@ -21,16 +23,21 @@ extension User {
     static func getUser(dict: [String: Any]) -> User {
         let user = User()
         user.email = dict["Email"] as? String
-        user.pass = dict["Password"] as? String
+        user.fullName = dict["FullName"] as? String
+        user.phoneNumber = dict["PhoneNumber"] as? String
+        user.city = dict["City"] as? String
         return user
     }
     
     
     
-    static func register(email: String , pass: String) -> [String:Any] {
+    static func register(email: String , fullName: String, phoneNumber: String, city:String) -> [String:Any] {
         
         let createAcoount = ["Email": email ,
-                             "Password": pass
+                             "FullName": fullName ,
+                             "PhoneNumber" : phoneNumber ,
+                             "City": city
+                             
         ] as [String:Any]
         
         return createAcoount

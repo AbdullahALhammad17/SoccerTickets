@@ -12,7 +12,6 @@
 		CE47A09A2766071900EE15E8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE47A0992766071900EE15E8 /* FirebaseFirestore */; };
 		CE47A0A22766320400EE15E8 /* TicketsArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0A12766320400EE15E8 /* TicketsArea.swift */; };
 		CE47A0A4276635E900EE15E8 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0A3276635E900EE15E8 /* TableView.swift */; };
-		CE4FEED7276721B700026287 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FEED6276721B600026287 /* Matches.swift */; };
 		CE4FEED92767264800026287 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FEED82767264800026287 /* Enums.swift */; };
 		CE60DA352761EDD700E9863E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA342761EDD700E9863E /* HomeVC.swift */; };
 		CE60DA38276214CE00E9863E /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA37276214CE00E9863E /* Fixtures.swift */; };
@@ -35,7 +34,6 @@
 		CE47A0962766044700EE15E8 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		CE47A0A12766320400EE15E8 /* TicketsArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsArea.swift; sourceTree = "<group>"; };
 		CE47A0A3276635E900EE15E8 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
-		CE4FEED6276721B600026287 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
 		CE4FEED82767264800026287 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		CE60DA342761EDD700E9863E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CE60DA37276214CE00E9863E /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 			children = (
 				CE60DA392762248600E9863E /* FootballWorld.swift */,
 				CE47A0A3276635E900EE15E8 /* TableView.swift */,
-				CE4FEED6276721B600026287 /* Matches.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -222,7 +219,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE47A0A22766320400EE15E8 /* TicketsArea.swift in Sources */,
-				CE4FEED7276721B700026287 /* Matches.swift in Sources */,
 				CEDECC822760C5ED005B0386 /* SignUpVC.swift in Sources */,
 				CEDECC6A27608F0F005B0386 /* SignIn.swift in Sources */,
 				CEDECC6627608F0F005B0386 /* AppDelegate.swift in Sources */,

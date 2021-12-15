@@ -10,11 +10,11 @@ import FirebaseFirestore
 
 
 class userApi {
-    static func newUser(email:String, uid:String, pass:String, completion: @escaping (Bool) -> Void) {
+    static func newUser(email:String, uid:String,fullName: String, phoneNumber:String, city:String, completion: @escaping (Bool) -> Void) {
         let refUser = Firestore.firestore().collection("Users")
         
         
-        refUser.document(uid).setData(User.register(email: email, pass: pass))
+        refUser.document(uid).setData(User.register(email: email, fullName: fullName, phoneNumber: phoneNumber, city: city))
         
         completion(true)
         

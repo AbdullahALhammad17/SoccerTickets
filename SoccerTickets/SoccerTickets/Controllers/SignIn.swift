@@ -7,6 +7,7 @@
 
 import UIKit
 import FirebaseAuth
+import FirebaseFirestore
 class SignIn: UIViewController {
     
     @IBOutlet weak var emailLogin: UITextField!
@@ -19,6 +20,7 @@ class SignIn: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        passLogin.isSecureTextEntry = true
       
     }
    
