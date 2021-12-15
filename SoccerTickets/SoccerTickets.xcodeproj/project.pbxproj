@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE47A0952766017500EE15E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0942766017500EE15E8 /* User.swift */; };
+		CE47A0972766044700EE15E8 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0962766044700EE15E8 /* UserApi.swift */; };
+		CE47A09A2766071900EE15E8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE47A0992766071900EE15E8 /* FirebaseFirestore */; };
+		CE47A0A22766320400EE15E8 /* TicketsArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0A12766320400EE15E8 /* TicketsArea.swift */; };
+		CE47A0A4276635E900EE15E8 /* TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0A3276635E900EE15E8 /* TableView.swift */; };
+		CE4FEED7276721B700026287 /* Matches.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FEED6276721B600026287 /* Matches.swift */; };
+		CE4FEED92767264800026287 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FEED82767264800026287 /* Enums.swift */; };
+		CE60DA352761EDD700E9863E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA342761EDD700E9863E /* HomeVC.swift */; };
+		CE60DA38276214CE00E9863E /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA37276214CE00E9863E /* Fixtures.swift */; };
+		CE60DA3A2762248600E9863E /* FootballWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA392762248600E9863E /* FootballWorld.swift */; };
+		CE86732F276885E6008DC098 /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86732E276885E6008DC098 /* ConfirmVC.swift */; };
+		CEDECC6627608F0F005B0386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDECC6527608F0F005B0386 /* AppDelegate.swift */; };
+		CEDECC6827608F0F005B0386 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDECC6727608F0F005B0386 /* SceneDelegate.swift */; };
+		CEDECC6A27608F0F005B0386 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDECC6927608F0F005B0386 /* SignIn.swift */; };
+		CEDECC6D27608F0F005B0386 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDECC6B27608F0F005B0386 /* Main.storyboard */; };
+		CEDECC6F27608F10005B0386 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEDECC6E27608F10005B0386 /* Assets.xcassets */; };
+		CEDECC7227608F10005B0386 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDECC7027608F10005B0386 /* LaunchScreen.storyboard */; };
+		CEDECC7A2760903D005B0386 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEDECC792760903D005B0386 /* GoogleService-Info.plist */; };
+		CEDECC7D276090DA005B0386 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CEDECC7C276090DA005B0386 /* FirebaseAnalytics */; };
+		CEDECC7F276090DA005B0386 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = CEDECC7E276090DA005B0386 /* FirebaseAuth */; };
+		CEDECC822760C5ED005B0386 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDECC812760C5ED005B0386 /* SignUpVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE47A0942766017500EE15E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE47A0962766044700EE15E8 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		CE47A0A12766320400EE15E8 /* TicketsArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsArea.swift; sourceTree = "<group>"; };
+		CE47A0A3276635E900EE15E8 /* TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableView.swift; sourceTree = "<group>"; };
+		CE4FEED6276721B600026287 /* Matches.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matches.swift; sourceTree = "<group>"; };
+		CE4FEED82767264800026287 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		CE60DA342761EDD700E9863E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		CE60DA37276214CE00E9863E /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
+		CE60DA392762248600E9863E /* FootballWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballWorld.swift; sourceTree = "<group>"; };
+		CE86732E276885E6008DC098 /* ConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
+		CEDECC6227608F0F005B0386 /* SoccerTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEDECC6527608F0F005B0386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEDECC6727608F0F005B0386 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEDECC6927608F0F005B0386 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
+		CEDECC6C27608F0F005B0386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEDECC6E27608F10005B0386 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEDECC7127608F10005B0386 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEDECC7327608F10005B0386 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDECC792760903D005B0386 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEDECC812760C5ED005B0386 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEDECC5F27608F0F005B0386 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDECC7D276090DA005B0386 /* FirebaseAnalytics in Frameworks */,
+				CEDECC7F276090DA005B0386 /* FirebaseAuth in Frameworks */,
+				CE47A09A2766071900EE15E8 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE47A0982766071900EE15E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE60DA302761E36B00E9863E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE60DA37276214CE00E9863E /* Fixtures.swift */,
+				CE47A0942766017500EE15E8 /* User.swift */,
+				CE47A0962766044700EE15E8 /* UserApi.swift */,
+				CE4FEED82767264800026287 /* Enums.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE60DA312761E93D00E9863E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CE60DA392762248600E9863E /* FootballWorld.swift */,
+				CE47A0A3276635E900EE15E8 /* TableView.swift */,
+				CE4FEED6276721B600026287 /* Matches.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		CEDECC5927608F0F005B0386 = {
+			isa = PBXGroup;
+			children = (
+				CEDECC6427608F0F005B0386 /* SoccerTickets */,
+				CEDECC6327608F0F005B0386 /* Products */,
+				CE47A0982766071900EE15E8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEDECC6327608F0F005B0386 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEDECC6227608F0F005B0386 /* SoccerTickets.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEDECC6427608F0F005B0386 /* SoccerTickets */ = {
+			isa = PBXGroup;
+			children = (
+				CEDECC8027609238005B0386 /* Controllers */,
+				CEDECC6527608F0F005B0386 /* AppDelegate.swift */,
+				CEDECC6727608F0F005B0386 /* SceneDelegate.swift */,
+				CE60DA302761E36B00E9863E /* Models */,
+				CEDECC6B27608F0F005B0386 /* Main.storyboard */,
+				CEDECC6E27608F10005B0386 /* Assets.xcassets */,
+				CE60DA312761E93D00E9863E /* Cells */,
+				CEDECC7027608F10005B0386 /* LaunchScreen.storyboard */,
+				CEDECC7327608F10005B0386 /* Info.plist */,
+				CEDECC792760903D005B0386 /* GoogleService-Info.plist */,
+			);
+			path = SoccerTickets;
+			sourceTree = "<group>";
+		};
+		CEDECC8027609238005B0386 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CEDECC6927608F0F005B0386 /* SignIn.swift */,
+				CEDECC812760C5ED005B0386 /* SignUpVC.swift */,
+				CE60DA342761EDD700E9863E /* HomeVC.swift */,
+				CE47A0A12766320400EE15E8 /* TicketsArea.swift */,
+				CE86732E276885E6008DC098 /* ConfirmVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEDECC6127608F0F005B0386 /* SoccerTickets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEDECC7627608F10005B0386 /* Build configuration list for PBXNativeTarget "SoccerTickets" */;
+			buildPhases = (
+				CEDECC5E27608F0F005B0386 /* Sources */,
+				CEDECC5F27608F0F005B0386 /* Frameworks */,
+				CEDECC6027608F0F005B0386 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoccerTickets;
+			packageProductDependencies = (
+				CEDECC7C276090DA005B0386 /* FirebaseAnalytics */,
+				CEDECC7E276090DA005B0386 /* FirebaseAuth */,
+				CE47A0992766071900EE15E8 /* FirebaseFirestore */,
+			);
+			productName = SoccerTickets;
+			productReference = CEDECC6227608F0F005B0386 /* SoccerTickets.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEDECC5A27608F0F005B0386 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					CEDECC6127608F0F005B0386 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = CEDECC5D27608F0F005B0386 /* Build configuration list for PBXProject "SoccerTickets" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEDECC5927608F0F005B0386;
+			packageReferences = (
+				CEDECC7B276090DA005B0386 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CEDECC6327608F0F005B0386 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEDECC6127608F0F005B0386 /* SoccerTickets */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEDECC6027608F0F005B0386 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDECC7227608F10005B0386 /* LaunchScreen.storyboard in Resources */,
+				CEDECC7A2760903D005B0386 /* GoogleService-Info.plist in Resources */,
+				CEDECC6F27608F10005B0386 /* Assets.xcassets in Resources */,
+				CEDECC6D27608F0F005B0386 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEDECC5E27608F0F005B0386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE47A0A22766320400EE15E8 /* TicketsArea.swift in Sources */,
+				CE4FEED7276721B700026287 /* Matches.swift in Sources */,
+				CEDECC822760C5ED005B0386 /* SignUpVC.swift in Sources */,
+				CEDECC6A27608F0F005B0386 /* SignIn.swift in Sources */,
+				CEDECC6627608F0F005B0386 /* AppDelegate.swift in Sources */,
+				CE60DA3A2762248600E9863E /* FootballWorld.swift in Sources */,
+				CE47A0952766017500EE15E8 /* User.swift in Sources */,
+				CE86732F276885E6008DC098 /* ConfirmVC.swift in Sources */,
+				CE4FEED92767264800026287 /* Enums.swift in Sources */,
+				CE60DA352761EDD700E9863E /* HomeVC.swift in Sources */,
+				CE47A0A4276635E900EE15E8 /* TableView.swift in Sources */,
+				CE47A0972766044700EE15E8 /* UserApi.swift in Sources */,
+				CE60DA38276214CE00E9863E /* Fixtures.swift in Sources */,
+				CEDECC6827608F0F005B0386 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEDECC6B27608F0F005B0386 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDECC6C27608F0F005B0386 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEDECC7027608F10005B0386 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEDECC7127608F10005B0386 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEDECC7427608F10005B0386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEDECC7527608F10005B0386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEDECC7727608F10005B0386 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerTickets/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com..SoccerTickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEDECC7827608F10005B0386 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SoccerTickets/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com..SoccerTickets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEDECC5D27608F0F005B0386 /* Build configuration list for PBXProject "SoccerTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDECC7427608F10005B0386 /* Debug */,
+				CEDECC7527608F10005B0386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEDECC7627608F10005B0386 /* Build configuration list for PBXNativeTarget "SoccerTickets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDECC7727608F10005B0386 /* Debug */,
+				CEDECC7827608F10005B0386 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEDECC7B276090DA005B0386 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE47A0992766071900EE15E8 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEDECC7B276090DA005B0386 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CEDECC7C276090DA005B0386 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEDECC7B276090DA005B0386 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CEDECC7E276090DA005B0386 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEDECC7B276090DA005B0386 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CEDECC5A27608F0F005B0386 /* Project object */;
+}

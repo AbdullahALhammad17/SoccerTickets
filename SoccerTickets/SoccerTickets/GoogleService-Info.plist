@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>190365734711-tg1drapq7fdfcpsn15p51eqadp8u475p.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.190365734711-tg1drapq7fdfcpsn15p51eqadp8u475p</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCe0f-sefFkxpEoUL7q1mCcqL_V3i9F7D0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>190365734711</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com..SoccerTickets</string>
+	<key>PROJECT_ID</key>
+	<string>soccertickets-62709</string>
+	<key>STORAGE_BUCKET</key>
+	<string>soccertickets-62709.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:190365734711:ios:0ebf184eed316107f62cb2</string>
+</dict>
+</plist>
