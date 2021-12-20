@@ -17,6 +17,7 @@
 		CE60DA38276214CE00E9863E /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA37276214CE00E9863E /* Fixtures.swift */; };
 		CE60DA3A2762248600E9863E /* FootballWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA392762248600E9863E /* FootballWorld.swift */; };
 		CE86732F276885E6008DC098 /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86732E276885E6008DC098 /* ConfirmVC.swift */; };
+		CE906C5627709167009B5911 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE906C5527709167009B5911 /* ProfileVC.swift */; };
 		CEDECC6627608F0F005B0386 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDECC6527608F0F005B0386 /* AppDelegate.swift */; };
 		CEDECC6827608F0F005B0386 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDECC6727608F0F005B0386 /* SceneDelegate.swift */; };
 		CEDECC6A27608F0F005B0386 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDECC6927608F0F005B0386 /* SignIn.swift */; };
@@ -39,6 +40,7 @@
 		CE60DA37276214CE00E9863E /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
 		CE60DA392762248600E9863E /* FootballWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballWorld.swift; sourceTree = "<group>"; };
 		CE86732E276885E6008DC098 /* ConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
+		CE906C5527709167009B5911 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		CEDECC6227608F0F005B0386 /* SoccerTickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerTickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDECC6527608F0F005B0386 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDECC6727608F0F005B0386 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 				CE60DA342761EDD700E9863E /* HomeVC.swift */,
 				CE47A0A12766320400EE15E8 /* TicketsArea.swift */,
 				CE86732E276885E6008DC098 /* ConfirmVC.swift */,
+				CE906C5527709167009B5911 /* ProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE906C5627709167009B5911 /* ProfileVC.swift in Sources */,
 				CE47A0A22766320400EE15E8 /* TicketsArea.swift in Sources */,
 				CEDECC822760C5ED005B0386 /* SignUpVC.swift in Sources */,
 				CEDECC6A27608F0F005B0386 /* SignIn.swift in Sources */,

@@ -21,9 +21,17 @@ class SignIn: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         passLogin.isSecureTextEntry = true
+        
+        
       
     }
-   
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            performSegue(withIdentifier: "Home", sender: nil)
+        }
+            
+    }
     
     func signIn(email: String, password: String){
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult , error in
