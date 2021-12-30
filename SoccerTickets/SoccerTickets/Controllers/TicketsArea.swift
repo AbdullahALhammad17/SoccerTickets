@@ -6,12 +6,15 @@
 //
 
 import UIKit
+import FirebaseFirestore
+import CoreMedia
 
 class TicketsArea: UIViewController {
     
     var booking : UIImage?
     var stadumms : String?
-    
+    var arrImages:[UIImage]?
+    var matchesRequest = [Matches]()
 //
 //    var tickets0 = [UIImage(named: Tickets.dmkVSbat.rawValue), UIImage(named: Tickets.hilVSfat.rawValue), UIImage(named: Tickets.fehVSabh.rawValue), UIImage(named: Tickets.taeVSfes.rawValue), UIImage(named: Tickets.nsrVShzm.rawValue), UIImage(named: Tickets.ithVSitf.rawValue), UIImage(named: Tickets.raeVSahl.rawValue), UIImage(named: Tickets.shbVStaw.rawValue)]
     
@@ -24,9 +27,26 @@ class TicketsArea: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
-        
+        MatchesApi.getMatch { match in
+            self.matchesRequest.append(match)
+            self.tableView.reloadData()
+        }
+//        downloadImages()
     }
+    
+//    func downloadImages() {
+//        MatchesApi.getMatch { match in
+//            guard let url = URL(string: match.images ?? "") else { return }
+//            if let data = try? Data(contentsOf: url) {
+//                DispatchQueue.main.async {
+//                    self.arrImages?.append(UIImage(data: data)!)
+//                    self.tableView.reloadData()
+//                }
+//            }
+//        }
+//    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let selectedImage = segue.destination as! ConfirmVC
         selectedImage.confirm = booking
@@ -38,14 +58,22 @@ class TicketsArea: UIViewController {
 
 extension TicketsArea : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tickets.count
+        return matchesRequest.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as!
-        TableView
-        cell.tiketss.image = tickets[indexPath.row].image
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TableView else { return UITableViewCell()}
+    
+        guard let imageUrl = matchesRequest[indexPath.row].images else { return UITableViewCell()}
+        
+        guard let url = URL(string: imageUrl) else { return UITableViewCell()}
+        if let data = try? Data(contentsOf: url) {
+            DispatchQueue.main.async {
+                cell.tiketss.image = UIImage(data: data)
+            }
+        }
+        
         //cell.collectionView.tag = indexPath.section
         
         return cell

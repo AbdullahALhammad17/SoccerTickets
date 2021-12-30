@@ -64,7 +64,7 @@ class ProfileVC: UIViewController {
         }
         
         let no = UIAlertAction(title: "No", style: .cancel)
-        
+
         
         alert.addAction(yes)
         alert.addAction(no)

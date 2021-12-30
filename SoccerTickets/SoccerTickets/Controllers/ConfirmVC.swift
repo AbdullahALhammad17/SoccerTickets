@@ -27,7 +27,7 @@ class ConfirmVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
     
     var stadums = ""
     
-    let prices = ["VIP Box: 4500", "TicketG1: 850", "TicketG2: 850", "TicketS2: 850", "VIP Platinum: 550", "TicketL1: 100", "TicketL2: 75", "TicketH1: 60", "TicketF: 50", "TicketC: 40"]
+    let prices = ["","VIP Box: 4500", "TicketG1: 850", "TicketG2: 850", "TicketS2: 850", "VIP Platinum: 550", "TicketL1: 100", "TicketL2: 75", "TicketH1: 60", "TicketF: 50", "TicketC: 40"]
     
     
     
@@ -39,9 +39,29 @@ class ConfirmVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
         createPicker()
         dismissPickerView()
        
+        MatchesApi.getMatch { matches in
+            self.matchPlace.text = matches.stadium
+            
+        }
     }
     
     @IBAction func bookingMethod(_ sender: UIButton) {
+        
+        if ticketPrices.hasText {
+            let vc = storyboard?.instantiateViewController(withIdentifier: "booking") as! ReservationVC
+            vc.reserveImage = confirm
+            present(vc, animated: true, completion: nil)
+            
+        } else {
+            let chosePrice = UIAlertController(title: "Oups!", message: "Please choose your ticket", preferredStyle: .alert)
+            
+            let gotIt = UIAlertAction(title: "OK", style: .default)
+            
+            chosePrice.addAction(gotIt)
+            present(chosePrice, animated: true)
+        }
+        
+       
         
         
         
