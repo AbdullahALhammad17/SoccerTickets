@@ -9,30 +9,6 @@ import UIKit
 
 class FootballWorld: UITableViewCell {
     
-    @IBOutlet weak var firstTeam: UIImageView!
-    
-    @IBOutlet weak var seccondTeam: UIImageView!
-    
-    @IBOutlet weak var firstScore: UILabel!
-    
-    @IBOutlet weak var seccondScore: UILabel!
-    
-    @IBOutlet weak var firstStatistic: UIProgressView!
-    
-    @IBOutlet weak var seccondStatistic: UIProgressView!
-    
-    @IBOutlet weak var thirdStatistic: UIProgressView!
-    
-    
-    @IBOutlet weak var fourthStatistic: UIProgressView!
-    
-    @IBOutlet weak var fifthStatistic: UIProgressView!
-    
-    
-    @IBOutlet weak var lastStatistic: UIProgressView!
-    
-    
-    
     
     
     override func awakeFromNib() {

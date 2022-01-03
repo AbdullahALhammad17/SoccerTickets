@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE37A7472783339700B11C34 /* MatchesScoresApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37A7462783339700B11C34 /* MatchesScoresApi.swift */; };
 		CE47A0952766017500EE15E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0942766017500EE15E8 /* User.swift */; };
 		CE47A0972766044700EE15E8 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0962766044700EE15E8 /* UserApi.swift */; };
 		CE47A09A2766071900EE15E8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE47A0992766071900EE15E8 /* FirebaseFirestore */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE37A7462783339700B11C34 /* MatchesScoresApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesScoresApi.swift; sourceTree = "<group>"; };
 		CE47A0942766017500EE15E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE47A0962766044700EE15E8 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		CE47A0A12766320400EE15E8 /* TicketsArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsArea.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				CE47A0962766044700EE15E8 /* UserApi.swift */,
 				CE4FEED82767264800026287 /* Enums.swift */,
 				CE942E482779D083004D66EE /* MatchesApi.swift */,
+				CE37A7462783339700B11C34 /* MatchesScoresApi.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 				CE942E492779D083004D66EE /* MatchesApi.swift in Sources */,
 				CE60DA352761EDD700E9863E /* HomeVC.swift in Sources */,
 				CE47A0A4276635E900EE15E8 /* TableView.swift in Sources */,
+				CE37A7472783339700B11C34 /* MatchesScoresApi.swift in Sources */,
 				CE47A0972766044700EE15E8 /* UserApi.swift in Sources */,
 				CE60DA38276214CE00E9863E /* Fixtures.swift in Sources */,
 				CEDECC6827608F0F005B0386 /* SceneDelegate.swift in Sources */,

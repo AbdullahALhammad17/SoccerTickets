@@ -12,7 +12,7 @@ class ConfirmVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
     
     
     
-    var confirm : UIImage?
+    var confirm : Matches?
     
     var selectedTicket:String?
     
@@ -34,22 +34,33 @@ class ConfirmVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        confirmImage.image = confirm
-        matchPlace.text = stadums
+//        confirmImage.image = confirm
+        matchPlace.text = confirm?.stadium
+        //confirmImage.image = UIImage(named: confirm?.images ?? "");
+        if let data = try? Data(contentsOf: URL(string: confirm!.images!)! ) {
+            DispatchQueue.main.async {
+                self.confirmImage.image = UIImage(data: data)
+            }
+        }
         createPicker()
         dismissPickerView()
        
-        MatchesApi.getMatch { matches in
-            self.matchPlace.text = matches.stadium
-            
-        }
+//        MatchesApi.getMatch { matches in
+//            self.matchPlace.text = matches.stadium
+//
+//        }
     }
     
     @IBAction func bookingMethod(_ sender: UIButton) {
         
         if ticketPrices.hasText {
             let vc = storyboard?.instantiateViewController(withIdentifier: "booking") as! ReservationVC
-            vc.reserveImage = confirm
+            guard let url = URL(string: confirm?.images ?? "") else { return }
+            if let data = try? Data(contentsOf: url) {
+                DispatchQueue.main.async {
+                    vc.bookingImage.image = UIImage(data: data)
+                }
+            }
             present(vc, animated: true, completion: nil)
             
         } else {

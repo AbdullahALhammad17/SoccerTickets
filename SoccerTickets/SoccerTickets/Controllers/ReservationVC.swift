@@ -6,10 +6,12 @@
 //
 
 import UIKit
+import FirebaseAuth
+import FirebaseFirestore
 
 class ReservationVC: UIViewController {
     
-    var reserveImage : UIImage?
+//    var reserveImage : UIImage?
     
     @IBOutlet weak var bookingImage: UIImageView!
     
@@ -19,8 +21,7 @@ class ReservationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         reservePosition.text = "Pending.."
-        
-        bookingImage.image = reserveImage
+       
 
     }
     

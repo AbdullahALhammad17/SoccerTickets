@@ -7,7 +7,7 @@
 
 import UIKit
 import FirebaseFirestore
-import CoreMedia
+import FirebaseAuth
 
 class TicketsArea: UIViewController {
     
@@ -15,6 +15,7 @@ class TicketsArea: UIViewController {
     var stadumms : String?
     var arrImages:[UIImage]?
     var matchesRequest = [Matches]()
+    var selectedMatches: Matches?
 //
 //    var tickets0 = [UIImage(named: Tickets.dmkVSbat.rawValue), UIImage(named: Tickets.hilVSfat.rawValue), UIImage(named: Tickets.fehVSabh.rawValue), UIImage(named: Tickets.taeVSfes.rawValue), UIImage(named: Tickets.nsrVShzm.rawValue), UIImage(named: Tickets.ithVSitf.rawValue), UIImage(named: Tickets.raeVSahl.rawValue), UIImage(named: Tickets.shbVStaw.rawValue)]
     
@@ -49,8 +50,8 @@ class TicketsArea: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let selectedImage = segue.destination as! ConfirmVC
-        selectedImage.confirm = booking
-        selectedImage.stadums = stadumms ?? ""
+        selectedImage.confirm = selectedMatches
+        
     }
     
 }
@@ -83,8 +84,7 @@ extension TicketsArea : UITableViewDelegate, UITableViewDataSource {
         return 235
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        booking = tickets[indexPath.row].image
-        stadumms = tickets[indexPath.row].stadum
+        selectedMatches = matchesRequest[indexPath.row]
         
         performSegue(withIdentifier: "ToConfirmTicket", sender: nil)
         
