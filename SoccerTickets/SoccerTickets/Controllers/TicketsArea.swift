@@ -8,6 +8,7 @@
 import UIKit
 import FirebaseFirestore
 import FirebaseAuth
+import Kingfisher
 
 class TicketsArea: UIViewController {
     
@@ -68,12 +69,7 @@ extension TicketsArea : UITableViewDelegate, UITableViewDataSource {
     
         guard let imageUrl = matchesRequest[indexPath.row].images else { return UITableViewCell()}
         
-        guard let url = URL(string: imageUrl) else { return UITableViewCell()}
-        if let data = try? Data(contentsOf: url) {
-            DispatchQueue.main.async {
-                cell.tiketss.image = UIImage(data: data)
-            }
-        }
+        cell.tiketss.kf.setImage(with: URL(string: imageUrl),options: [.cacheOriginalImage])
         
         //cell.collectionView.tag = indexPath.section
         

@@ -26,7 +26,7 @@ extension MatchesScores {
 
 class ScoresApi {
     static func getScore(completion:@escaping (MatchesScores) -> Void){
-        let refScore = Firestore.firestore().collection("MAtchesScores")
+        let refScore = Firestore.firestore().collection("MatchesScores")
         refScore.getDocuments { documents, error in
             guard let documents = documents?.documents else {return}
             for document in documents {

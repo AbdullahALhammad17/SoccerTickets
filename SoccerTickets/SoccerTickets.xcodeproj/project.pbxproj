@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		CE37A7472783339700B11C34 /* MatchesScoresApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE37A7462783339700B11C34 /* MatchesScoresApi.swift */; };
+		CE3BFB1D27858AD900A55B18 /* MatchesScoresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3BFB1C27858AD900A55B18 /* MatchesScoresCell.swift */; };
+		CE3BFB202785B85B00A55B18 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CE3BFB1F2785B85B00A55B18 /* Kingfisher */; };
 		CE47A0952766017500EE15E8 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0942766017500EE15E8 /* User.swift */; };
 		CE47A0972766044700EE15E8 /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE47A0962766044700EE15E8 /* UserApi.swift */; };
 		CE47A09A2766071900EE15E8 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CE47A0992766071900EE15E8 /* FirebaseFirestore */; };
@@ -16,7 +18,6 @@
 		CE4FEED92767264800026287 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4FEED82767264800026287 /* Enums.swift */; };
 		CE60DA352761EDD700E9863E /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA342761EDD700E9863E /* HomeVC.swift */; };
 		CE60DA38276214CE00E9863E /* Fixtures.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA37276214CE00E9863E /* Fixtures.swift */; };
-		CE60DA3A2762248600E9863E /* FootballWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE60DA392762248600E9863E /* FootballWorld.swift */; };
 		CE86732F276885E6008DC098 /* ConfirmVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE86732E276885E6008DC098 /* ConfirmVC.swift */; };
 		CE906C5627709167009B5911 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE906C5527709167009B5911 /* ProfileVC.swift */; };
 		CE942E492779D083004D66EE /* MatchesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE942E482779D083004D66EE /* MatchesApi.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		CE37A7462783339700B11C34 /* MatchesScoresApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesScoresApi.swift; sourceTree = "<group>"; };
+		CE3BFB1C27858AD900A55B18 /* MatchesScoresCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesScoresCell.swift; sourceTree = "<group>"; };
 		CE47A0942766017500EE15E8 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CE47A0962766044700EE15E8 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
 		CE47A0A12766320400EE15E8 /* TicketsArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsArea.swift; sourceTree = "<group>"; };
@@ -42,7 +44,6 @@
 		CE4FEED82767264800026287 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		CE60DA342761EDD700E9863E /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		CE60DA37276214CE00E9863E /* Fixtures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fixtures.swift; sourceTree = "<group>"; };
-		CE60DA392762248600E9863E /* FootballWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballWorld.swift; sourceTree = "<group>"; };
 		CE86732E276885E6008DC098 /* ConfirmVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmVC.swift; sourceTree = "<group>"; };
 		CE906C5527709167009B5911 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		CE942E482779D083004D66EE /* MatchesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesApi.swift; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE3BFB202785B85B00A55B18 /* Kingfisher in Frameworks */,
 				CEDECC7D276090DA005B0386 /* FirebaseAnalytics in Frameworks */,
 				CEDECC7F276090DA005B0386 /* FirebaseAuth in Frameworks */,
 				CE47A09A2766071900EE15E8 /* FirebaseFirestore in Frameworks */,
@@ -96,8 +98,8 @@
 		CE60DA312761E93D00E9863E /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				CE60DA392762248600E9863E /* FootballWorld.swift */,
 				CE47A0A3276635E900EE15E8 /* TableView.swift */,
+				CE3BFB1C27858AD900A55B18 /* MatchesScoresCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -170,6 +172,7 @@
 				CEDECC7C276090DA005B0386 /* FirebaseAnalytics */,
 				CEDECC7E276090DA005B0386 /* FirebaseAuth */,
 				CE47A0992766071900EE15E8 /* FirebaseFirestore */,
+				CE3BFB1F2785B85B00A55B18 /* Kingfisher */,
 			);
 			productName = SoccerTickets;
 			productReference = CEDECC6227608F0F005B0386 /* SoccerTickets.app */;
@@ -201,6 +204,7 @@
 			mainGroup = CEDECC5927608F0F005B0386;
 			packageReferences = (
 				CEDECC7B276090DA005B0386 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				CE3BFB1E2785B85A00A55B18 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CEDECC6327608F0F005B0386 /* Products */;
 			projectDirPath = "";
@@ -236,12 +240,12 @@
 				CEDECC6A27608F0F005B0386 /* SignIn.swift in Sources */,
 				CEB220852771BD0C0051279F /* ReservationVC.swift in Sources */,
 				CEDECC6627608F0F005B0386 /* AppDelegate.swift in Sources */,
-				CE60DA3A2762248600E9863E /* FootballWorld.swift in Sources */,
 				CE47A0952766017500EE15E8 /* User.swift in Sources */,
 				CE86732F276885E6008DC098 /* ConfirmVC.swift in Sources */,
 				CE4FEED92767264800026287 /* Enums.swift in Sources */,
 				CE942E492779D083004D66EE /* MatchesApi.swift in Sources */,
 				CE60DA352761EDD700E9863E /* HomeVC.swift in Sources */,
+				CE3BFB1D27858AD900A55B18 /* MatchesScoresCell.swift in Sources */,
 				CE47A0A4276635E900EE15E8 /* TableView.swift in Sources */,
 				CE37A7472783339700B11C34 /* MatchesScoresApi.swift in Sources */,
 				CE47A0972766044700EE15E8 /* UserApi.swift in Sources */,
@@ -466,6 +470,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CE3BFB1E2785B85A00A55B18 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		CEDECC7B276090DA005B0386 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -477,6 +489,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CE3BFB1F2785B85B00A55B18 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE3BFB1E2785B85A00A55B18 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		CE47A0992766071900EE15E8 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CEDECC7B276090DA005B0386 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
