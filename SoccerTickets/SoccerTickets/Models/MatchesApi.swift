@@ -44,6 +44,44 @@ class MatchesApi {
             
         }
     }
+}
+
+class ReservationPosition {
+    var photo:String?
+    var isReserved:Bool?
     
+}
+extension ReservationPosition {
     
+    static func createReservation(photo:String,isReserved:Bool) -> [String:Any] {
+        let newReserve = ["photo":photo,
+                          "isReserved":isReserved] as [String:Any]
+        
+        return newReserve
+    }
+    
+    static func addReservation(uid:String, photo:String, isReserved:Bool) {
+        let db = Firestore.firestore()
+        let refReserves = db.collection("Reservations")
+        refReserves.document(uid).setData(createReservation(photo: photo, isReserved: isReserved))
+    }
+    
+    static func getReserves(dic: [String:Any]) -> ReservationPosition {
+        let reservation = ReservationPosition()
+        reservation.photo = dic["photo"] as? String
+        reservation.isReserved = dic["isReserved"] as? Bool
+        return reservation
+    }
+    
+    static func getReservePosition(uid:String, completion: @escaping (ReservationPosition?,Error?) -> Void) {
+        let refPosition = Firestore.firestore().collection("Reservations")
+        refPosition.document(uid).getDocument { snapShot, err in
+            if let snapShot = snapShot, snapShot.exists {
+                let position = ReservationPosition.getReserves(dic: snapShot.data()!)
+                completion(position,nil)
+            } else {
+                completion(nil,err)
+            }
+        }
+    }
 }

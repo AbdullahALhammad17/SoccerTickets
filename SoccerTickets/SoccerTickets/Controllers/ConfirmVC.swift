@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import FirebaseAuth
 class ConfirmVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     
     
@@ -59,7 +59,10 @@ class ConfirmVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
             if let data = try? Data(contentsOf: url) {
                 DispatchQueue.main.async {
                     vc.bookingImage.image = UIImage(data: data)
+                    
                 }
+                let reserveStatus = true
+                ReservationPosition.addReservation(uid: Auth.auth().currentUser?.uid ?? "", photo: confirm?.images ?? "", isReserved: reserveStatus)
             }
             present(vc, animated: true, completion: nil)
             

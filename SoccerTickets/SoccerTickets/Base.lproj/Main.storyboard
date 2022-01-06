@@ -510,13 +510,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1H-6g-4wh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F1H-6g-4wh">
                                 <rect key="frame" x="80" y="466" width="254" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="NO1-y8-Kr7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fNm-IU-z6b">
@@ -532,10 +532,10 @@
                             <constraint firstItem="vu7-Ec-pOv" firstAttribute="trailing" secondItem="vZ2-X2-Tsn" secondAttribute="trailing" constant="80" id="DCj-tA-dhK"/>
                             <constraint firstItem="fNm-IU-z6b" firstAttribute="leading" secondItem="vu7-Ec-pOv" secondAttribute="leading" constant="87" id="EWZ-5M-d6m"/>
                             <constraint firstItem="vu7-Ec-pOv" firstAttribute="trailing" secondItem="F1H-6g-4wh" secondAttribute="trailing" constant="80" id="EYg-WM-S4B"/>
-                            <constraint firstItem="F1H-6g-4wh" firstAttribute="top" secondItem="vZ2-X2-Tsn" secondAttribute="bottom" constant="242.5" id="HNi-Cx-yTb"/>
                             <constraint firstItem="vZ2-X2-Tsn" firstAttribute="leading" secondItem="vu7-Ec-pOv" secondAttribute="leading" constant="80" id="LLI-Cp-ri1"/>
                             <constraint firstItem="fNm-IU-z6b" firstAttribute="top" secondItem="vZ2-X2-Tsn" secondAttribute="bottom" constant="50.5" id="Tip-ug-4LH"/>
                             <constraint firstItem="F1H-6g-4wh" firstAttribute="leading" secondItem="vu7-Ec-pOv" secondAttribute="leading" constant="80" id="c18-XM-ajf"/>
+                            <constraint firstItem="F1H-6g-4wh" firstAttribute="top" secondItem="fNm-IU-z6b" secondAttribute="bottom" constant="64" id="fmN-W2-Bnp"/>
                             <constraint firstItem="vZ2-X2-Tsn" firstAttribute="top" secondItem="vu7-Ec-pOv" secondAttribute="top" constant="115" id="qIP-it-Eki"/>
                             <constraint firstItem="vu7-Ec-pOv" firstAttribute="trailing" secondItem="fNm-IU-z6b" secondAttribute="trailing" constant="87" id="tbV-eW-OkN"/>
                         </constraints>
@@ -680,9 +680,6 @@
         </systemColor>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPinkColor">
-            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
