@@ -1,0 +1,112 @@
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "1sq-uZ-tcA"; */
+"1sq-uZ-tcA.text" = "الاسم";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "3nX-oV-QYJ"; */
+"3nX-oV-QYJ.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "45E-dU-IOv"; */
+"45E-dU-IOv.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "4j9-r8-5nF"; */
+"4j9-r8-5nF.title" = "الرئيسية";
+
+/* Class = "UITextField"; placeholder = "Password.."; ObjectID = "CUy-Nk-Kte"; */
+"CUy-Nk-Kte.placeholder" = "كلمة المرور";
+
+/* Class = "UIButton"; configuration.subtitle = "Don't have an account ? Sign Up"; ObjectID = "DbG-Kh-OAq"; */
+"DbG-Kh-OAq.configuration.subtitle" = "ليس لديك حساب؟ سجل الان";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DbG-Kh-OAq"; */
+"DbG-Kh-OAq.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "FullName.."; ObjectID = "GRH-Qe-CBK"; */
+"GRH-Qe-CBK.placeholder" = "الاسم الكامل";
+
+/* Class = "UIButton"; configuration.title = "Book"; ObjectID = "Gcr-e5-eUy"; */
+"Gcr-e5-eUy.configuration.title" = "احجز";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Gcr-e5-eUy"; */
+"Gcr-e5-eUy.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Create   Account"; ObjectID = "Jhe-uu-ed6"; */
+"Jhe-uu-ed6.text" = "تسجيل جديد";
+
+/* Class = "UITextField"; placeholder = "City.."; ObjectID = "K9L-Dt-Ndi"; */
+"K9L-Dt-Ndi.placeholder" = "المدينة..";
+
+/* Class = "UIButton"; normalTitle = "LogOut"; ObjectID = "Kbq-ss-1TX"; */
+"Kbq-ss-1TX.normalTitle" = "تسجيل خروج";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "L2K-9q-3Mw"; */
+"L2K-9q-3Mw.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "My Profile"; ObjectID = "NMH-yr-lnU"; */
+"NMH-yr-lnU.title" = "حسابي";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "Q7b-7r-c85"; */
+"Q7b-7r-c85.text" = "البريد الاكتروني";
+
+/* Class = "UILabel"; text = "City"; ObjectID = "S3N-z0-3FR"; */
+"S3N-z0-3FR.text" = "المدينة";
+
+/* Class = "UITextField"; placeholder = "Email address.."; ObjectID = "SD4-Sg-WWj"; */
+"SD4-Sg-WWj.placeholder" = "البريد الاكتروني..";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SFA-Fz-y62"; */
+"SFA-Fz-y62.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Password.."; ObjectID = "TFf-cQ-Jes"; */
+"TFf-cQ-Jes.placeholder" = "كلمة المرور..";
+
+/* Class = "UITabBarItem"; title = "My Tickets"; ObjectID = "ThN-zU-meo"; */
+"ThN-zU-meo.title" = "حجوزاتي";
+
+/* Class = "UILabel"; text = "My Profile"; ObjectID = "Yl5-X8-03c"; */
+"Yl5-X8-03c.text" = "حسابي";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "Z8H-jd-eEI"; */
+"Z8H-jd-eEI.normalTitle" = "تسجيل دخول";
+
+/* Class = "UITextField"; placeholder = "Prices.."; ObjectID = "cXr-Fv-m1L"; */
+"cXr-Fv-m1L.placeholder" = "الاسعار..";
+
+/* Class = "UILabel"; text = "PhoneNumber"; ObjectID = "dd0-gt-m70"; */
+"dd0-gt-m70.text" = "رقم الهاتف";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "e1C-9x-6Ti"; */
+"e1C-9x-6Ti.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Booking"; ObjectID = "eJU-dY-7ex"; */
+"eJU-dY-7ex.title" = "حجز التذاكر";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "o6v-1j-pVa"; */
+"o6v-1j-pVa.text" = "اهلا وسهلا";
+
+/* Class = "UINavigationItem"; title = "Standings"; ObjectID = "oWq-YR-jaN"; */
+"oWq-YR-jaN.title" = "ترتيب الدوري والهدافين";
+
+/* Class = "UITextField"; placeholder = "PhoneNumber.."; ObjectID = "q1F-Bu-KQ3"; */
+"q1F-Bu-KQ3.placeholder" = "رقم الجوال";
+
+/* Class = "UITextField"; placeholder = "Email.."; ObjectID = "rTv-Jq-lZb"; */
+"rTv-Jq-lZb.placeholder" = "البريد الاكتروني";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "raB-bj-Wff"; */
+"raB-bj-Wff.normalTitle" = "تسجيل جديد";
+
+/* Class = "UILabel"; text = "Your Booking for :"; ObjectID = "vZ2-X2-Tsn"; */
+"vZ2-X2-Tsn.text" = "حجزك للمباراة :";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "w9d-ob-L78"; */
+"w9d-ob-L78.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wh8-Cw-03v"; */
+"wh8-Cw-03v.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Next Matches"; ObjectID = "yUN-0n-tCJ"; */
+"yUN-0n-tCJ.title" = "المباريات القادمة";
+
+
+
+

@@ -17,10 +17,9 @@ class TicketsArea: UIViewController {
     var arrImages:[UIImage]?
     var matchesRequest = [Matches]()
     var selectedMatches: Matches?
-//
-//    var tickets0 = [UIImage(named: Tickets.dmkVSbat.rawValue), UIImage(named: Tickets.hilVSfat.rawValue), UIImage(named: Tickets.fehVSabh.rawValue), UIImage(named: Tickets.taeVSfes.rawValue), UIImage(named: Tickets.nsrVShzm.rawValue), UIImage(named: Tickets.ithVSitf.rawValue), UIImage(named: Tickets.raeVSahl.rawValue), UIImage(named: Tickets.shbVStaw.rawValue)]
+
     
-    var tickets = [Booking(image: UIImage(named: Tickets.dmkVSbat.rawValue) ?? UIImage(), stadum: "Prince Sultan bin Abdul Aziz Stadium"), Booking(image: UIImage(named: Tickets.hilVSfat.rawValue) ?? UIImage(), stadum: "King Fahd International Stadium"), Booking(image: UIImage(named: Tickets.fehVSabh.rawValue) ?? UIImage(), stadum: "King Salman Sport City Stadium"), Booking(image: UIImage(named: Tickets.taeVSfes.rawValue) ?? UIImage(), stadum: "Prince Abdul Aziz bin Musa'ed Stadium"), Booking(image: UIImage(named: Tickets.nsrVShzm.rawValue) ?? UIImage(), stadum: "King Saud University Stadium"), Booking(image: UIImage(named: Tickets.ithVSitf.rawValue) ?? UIImage(), stadum: "King Abdullah Sports City"), Booking(image: UIImage(named: Tickets.raeVSahl.rawValue) ?? UIImage(), stadum: "King Abdullah Sport City Stadium"), Booking(image: UIImage(named: Tickets.shbVStaw.rawValue) ?? UIImage(), stadum: "King Fahd International Stadium")]
+    
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -32,6 +31,7 @@ class TicketsArea: UIViewController {
         MatchesApi.getMatch { match in
             self.matchesRequest.append(match)
             self.tableView.reloadData()
+            
         }
 //        downloadImages()
     }

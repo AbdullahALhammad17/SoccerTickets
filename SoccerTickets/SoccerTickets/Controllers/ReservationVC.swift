@@ -32,7 +32,7 @@ class ReservationVC: UIViewController {
                 self.removeSpinner()
             if err == nil {
                 if position?.isReserved == true {
-                self.reservePosition.text = "Pending.."
+                    self.reservePosition.text = "Pending..".translated
                 self.reservePosition.textColor = .green
                     guard let url = URL(string: position?.photo ?? "")  else { return }
             if let data = try? Data(contentsOf: url) {
@@ -46,7 +46,25 @@ class ReservationVC: UIViewController {
     }
     }
 
-
+    @IBAction func cancelTicket(_ sender: Any) {
+        let checkCancel = UIAlertController(title: "Are you sure?".translated, message: "", preferredStyle: .alert)
+        
+        let cancel = UIAlertAction(title: "Yes".translated, style: .default) { dlete in
+                ReservationPosition.deleteReservation(uid: Auth.auth().currentUser?.uid ?? "")
+            self.bookingImage.image = nil
+            self.reservePosition.text = "No Reservation"
+            self.reservePosition.textColor = .red
+            
+        }
+        
+        let no = UIAlertAction(title: "No".translated, style: .cancel)
+        
+        checkCancel.addAction(cancel)
+        checkCancel.addAction(no)
+        
+        present(checkCancel, animated: false)
+    }
+    
 }
 
 

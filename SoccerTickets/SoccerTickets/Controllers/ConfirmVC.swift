@@ -67,9 +67,9 @@ class ConfirmVC: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource 
             present(vc, animated: true, completion: nil)
             
         } else {
-            let chosePrice = UIAlertController(title: "Oups!", message: "Please choose your ticket", preferredStyle: .alert)
+            let chosePrice = UIAlertController(title: "Oups!".translated, message: "Please choose your ticket".translated, preferredStyle: .alert)
             
-            let gotIt = UIAlertAction(title: "OK", style: .default)
+            let gotIt = UIAlertAction(title: "OK".translated, style: .default)
             
             chosePrice.addAction(gotIt)
             present(chosePrice, animated: true)

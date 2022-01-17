@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  SoccerTickets
+
+  Created by iAbdullah17 on 17/01/2022.
+  
+*/
+
+
+
+"Pass or User is Wrong" = "اسم المستخدم ، كلمة المرور خطأ";
+
+
+"Try Again" = "حاول مجددا";
+
+
+"Oups!" = "حدث خطأ";
+
+
+"Please choose your ticket" = "من فضلك اختر نوع التذكرة";
+
+
+"OK" = "تم";
+
+
+"Pending.." = "معلق..";
+
+
+"No Reservation" = "ليس هناك حجز";
+
+
+"Are You Sure" = "هل انت متاكد؟";
+
+
+"Yes" = "نعم";
+
+"No" = "لا";
+
+
+"Are you sure?" = "هل انت متأكد؟";
+"Yes" = "نعم";
+"No" = "لا";

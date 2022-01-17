@@ -55,15 +55,15 @@ class ProfileVC: UIViewController {
     
     func signOutAlert(){
         
-        let alert = UIAlertController(title: "Are You Sure" , message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Are You Sure".translated , message: "", preferredStyle: .alert)
         
-        let yes = UIAlertAction(title: "Yes", style: .default){ _ in
+        let yes = UIAlertAction(title: "Yes".translated, style: .default){ _ in
             try! Auth.auth().signOut()
             self.performSegue(withIdentifier: "logOut", sender: nil)
 
         }
         
-        let no = UIAlertAction(title: "No", style: .cancel)
+        let no = UIAlertAction(title: "No".translated, style: .cancel)
 
         
         alert.addAction(yes)

@@ -39,11 +39,10 @@ class HomeVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "MatchesScoresCell", for: indexPath) as? MatchesScoresCell else {return UITableViewCell()}
         
         guard let imageUrl = scoresRequest[indexPath.row].scores else {return UITableViewCell()}
-        print("LLLLLLLLL\(imageUrl)")
         cell.matchesScores.kf.setImage(with: URL(string: imageUrl),options: [.cacheOriginalImage])
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 480
+        return 450
     }
 }

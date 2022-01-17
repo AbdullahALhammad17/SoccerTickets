@@ -50,9 +50,9 @@ class SignIn: UIViewController {
     }
     
     func alerts() {
-        let wrong = UIAlertController(title: "Pass or User is Wrong", message: "", preferredStyle: .alert)
+        let wrong = UIAlertController(title: "Pass or User is Wrong".translated, message: "", preferredStyle: .alert)
     
-        let ok = UIAlertAction(title: "Try Again", style: .default) { action in
+        let ok = UIAlertAction(title: "Try Again".translated, style: .default) { action in
         print("Ok")
         
         
@@ -73,4 +73,13 @@ class SignIn: UIViewController {
     }
     
     
+}
+
+
+
+
+extension String {
+    var translated : String {
+        return NSLocalizedString(self, comment: "")
+    }
 }

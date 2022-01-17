@@ -65,6 +65,13 @@ extension ReservationPosition {
         let refReserves = db.collection("Reservations")
         refReserves.document(uid).setData(createReservation(photo: photo, isReserved: isReserved))
     }
+
+    
+    static func deleteReservation(uid:String) {
+        let db = Firestore.firestore()
+        let refReserves = db.collection("Reservations")
+        refReserves.document(uid).delete()
+    }
     
     static func getReserves(dic: [String:Any]) -> ReservationPosition {
         let reservation = ReservationPosition()
